@@ -1,0 +1,13 @@
+Options FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^index$ index.php [L]
+RewriteRule ^daily-transactions$ daily_transactions.php [L] 
+RewriteRule ^daily-unique-users$ daily_unique_users.php [L] 
+RewriteRule ^users-domains$ users_domains.php [L]
+RewriteRule ^users-transactions$ users_transactions.php [L] 
+RewriteRule ^users-transactions-gt3$ users_transactions_gt3.php [L] 
+RewriteRule ^last-seven-days$ last_seven_days.php [L] 
+RewriteRule ^create-data-to-send$ create_data_to_email.php [L] 
+RewriteRule ^email$ email.php [L] 
+RewriteRule ^insert-data$ insert_data.php [L]

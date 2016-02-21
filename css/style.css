@@ -1,0 +1,249 @@
+/*
+ * RESET CSS   
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, textarea, button{
+    outline: none;
+    appearance: none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    border-radius: 0;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+/* END RESET */
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} 
+
+[class*="item-"]{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.row{
+    width: 100%;
+    margin: 15px 0px;
+}
+.item-100p{
+    width: 100%;
+
+}
+.item-50p{
+    width: 50%;
+    float: left;
+}
+.item-33p{
+    width: 33.3333%;
+    float: left;
+}
+
+.item-25p{
+    width: 25%;
+    float: left;
+}
+.item-20p{
+    width: 20%;
+    float: left;
+}
+
+.item-40p{
+    width: 40%;
+    float: left;
+}
+.item-60p{
+    width: 60%;
+    float: left;
+}
+.item-10p{
+    width: 10%;
+    float: left;
+}
+@media all and (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}  
+@media all and (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+
+@media all and (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+
+}       
+
+@media all and (max-width: 767px){
+    .item-50p, .item-33p, 
+    .item-25p, .item-20p,
+    .item-40p, .item-60p,
+    .item-10p{
+        width: 100%;
+        float: none;
+    }
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.main_title{
+    color: #5E9FA3;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a.link{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #5E9FA3;
+    border-radius: 5px;
+    min-height: 150px;
+    
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+a.link span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+a.link:hover{
+    background-color: #86b7ba;
+}
+
+.main_table{
+    width: 100%;
+}
+.main_table thead tr th{
+    text-transform: uppercase;
+    color: #FAB87F;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.main_table tbody tr td{
+    padding: 10px;
+    text-align: center;
+}
+.main_table thead tr{
+    border-bottom: 1px solid #eeeeee;
+}
+.main_table tbody tr:nth-child(even){
+    background-color: #86b7ba;
+}
+
+.return_link{
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    background-color: #ff4040;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.return_link:hover{
+    background-color: #ff7070;
+}
+.m_t_b_15p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.loader_container{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+}
+.loader_container img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
